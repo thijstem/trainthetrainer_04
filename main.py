@@ -1,16 +1,10 @@
-# This is a sample Python script.
+#######################################################################################################################
+# A. Importeer csv (uit adlib) naar dataframe (pandas)
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+# pip install pandas
+import pandas as pd
 
-
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
-
-
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+# inlezen csv
+# ingeven padnaam naar csv, en indien van toepassing aanvullen delimiter
+lijstDMG = pd.read_csv(r"export (16).csv", delimiter=';')
+print(lijstDMG)
