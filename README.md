@@ -1,10 +1,10 @@
 # trainthetrainer_04
 
-Toelichting Olivier: inlezen LDES in PyCharm, dataframe kolom per kolom opbouwen
+Tool data visualisatie aanpassen op maat van DMG (europeana.datacleaning.py):
 
-Tool data visualisatie aanpassen op maat van DMG:
+    controleren van records met webpublicatie = veldnamen: objectnummer, instelling, objectnaam, titel, beschrijving, datum.vervaardiging.begin, datum.vervaardiging.eind, vervaardiger, vervaardiger.rol, vervaardiging.plaats, rechten.type
+      script maakt een excel-export met daarin de objectnummers waarin bepaalde velden niet zijn ingevuld en telt de aantallen + stelt ze grafisch voor in 3D-barchart
 
-controleren van records met webpublicatie = veldnamen: objectnummer, instelling, objectnaam, titel, beschrijving, datum.vervaardiging.begin, datum.vervaardiging.eind, vervaardiger, vervaardiger.rol, vervaardiging.plaats, rechten.type
-  script maakt een excel-export met daarin de objectnummers waarin bepaalde velden niet zijn ingevuld en visualisatie van de aantallen
-
-Excel tool voor tellen aantal beeldbestanden per object op server
+SCRIPT2: TTT04_snelleDatacleaning.py
+  script dat zelfde doet maar dan ongeacht de gekozen kolommen: leest een csv in en maakt dataframes voor ontbrekende waarden in elke kolom en slaat ze op in individuele sheets
+   zonder visualisatie of counts maar flexibeler in gebruik
